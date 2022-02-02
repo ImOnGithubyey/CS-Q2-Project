@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <title> Logged In </title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/2a3c86d9f4.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <style>
+            body {
+    background-color: #e5f1fd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-header {
+    color: white;
+    background-color: navy;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+}
+
+.side-navbar {
+    color: white;
+    background-color: rgb(79, 79, 243);
+    position: fixed;
+    width: 200px;
+    height: 90%;
+    top: 90px;
+    left: 0;
+    padding-bottom: 100px;
+}
+
+.nav-dashboard, .nav-courses, .nav-author {
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    top: 50px;
+}
+
+.title {
+    background-color: rgb(49, 49, 243);
+    height: auto; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.symbol-box {
+    background-color: skyblue;
+    height: 100px;
+}
+
+.circle-box {
+    background-color: white;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+@media (max-width: 450px) {
+
+    .main-header {
+        text-align: center;
+    }
+	
+	.main-header h1 {
+		margin-left: 20px;
+	}
+
+    .navbar-container {
+        display: none;
+    }
+    
+    .page-name, .main-container, .mobile-nav, .main-footer {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+
+    .banner-container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner1, .banner2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 80%;
+
+    }
+
+    .mobile-nav {
+        background-color: white;
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+    .page-name {
+        margin-top: 120px;
+    }
+
+    .picture1 p, .picture2 p {
+        position: relative;
+        bottom: 22%;
+        left: 25%;
+    }
+}
+
+@media (min-width: 450px) {
+	
+    .main-header h1 {
+        position: relative;
+        left: 50px;
+    }
+
+    .logo {
+        background-image: url("https://i.postimg.cc/Jn9yfLh4/K-Hub-Design-removebg-preview-1.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        left: 40px;
+    }
+
+    .page-name {
+        margin-top: 120px;
+        margin-left: 220px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    .main-container {
+        margin-left: 220px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .main-footer {
+        margin-left: 220px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+    }
+
+    .banner-container1 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .banner1, .banner2 {
+        margin-top: 50px;
+        width: 80%;
+    }
+    .picture1 p, .picture2 p {
+        position: relative;
+        bottom: 22%;
+        left: 25%;
+    }
+	
+	
+}
+
+@media (min-width: 769px) {
+
+    .banner-container1 {
+        flex-direction: row;
+        position: relative;
+        bottom: 50px;
+        height: 100px;
+        margin-top: 50px;
+    }
+
+    .banner1, .banner2 {
+        align-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 70%;
+        height: 100px;
+    }
+}
+
+.page-name {
+    background-color: white;
+    display: flex;
+    width: auto;
+    height: auto;   
+}
+
+.page-name h1 {
+    position: relative;
+    left: 10px;
+}
+
+.main-container {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;  
+}
+
+.banner-container1{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner1, .banner2 {
+    display: flex;
+}
+
+.picture1, .picture2 {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-style: groove;
+    border-right: none;
+}
+
+.picture1 p, .picture2 p {
+    font-size: 40px;
+}
+
+.banner-box1, .banner-box2 {
+    background-color: rgb(224, 219, 255);
+    width: 75%;
+    height: 100px;
+    border-style: groove;
+    border-left: none;
+}
+
+.banner-box1 a, .banner-box2 a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    left: 5%;
+    top: 30%;
+}
+
+.main-footer {
+    background-color: white;
+    display: flex;
+    width: auto;
+    height: auto;    
+}
+
+.main-footer p {
+    position: relative;
+    left: 10px;
+}
+        </style>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body>
+        
+        <!-- This is where you add and edit the contents of the actual page-->
+
+        <div class = "page-name">
+            <h1> Dashboard </h1>
+        </div>
+
+        <div class = "main-container">
+            
+            <div class = "banner-container1">
+                    <div class = "banner1">
+                        <div class = "picture1">
+                            <p> <i class="fas fa-leaf"></i> </p>
+                        </div>
+                        <div class = "banner-box1">
+                            <a href = "#"> Biology 1 </a>
+                        </div>
+                    </div>
+        
+                    <div class = "banner2">
+                        <div class = "picture2">
+                            <p> <i class="fas fa-flask"></i> </p>
+                        </div>
+                        <div class = "banner-box2">
+                            <a href = "#"> Chemistry 1 </a>
+                        </div>
+                    </div> 
+                
+            </div>
+
+            <div class = "banner-container1">
+                <div class = "banner1">
+                    <div class = "picture1">
+                        <p> <i class="fas fa-laptop"></i> </p>
+                    </div>
+                    <div class = "banner-box1">
+                        <a href = "#"> Computer Science 3 </a>
+                    </div>
+                </div>
+    
+                <div class = "banner2">
+                    <div class = "picture2">
+                        <p> <i class="fas fa-book"></i> </p>
+                    </div>
+                    <div class = "banner-box2">
+                        <a href = "#"> English 3 </a>
+                    </div>
+                </div> 
+            
+            </div>
+
+            <div class = "banner-container1">
+                <div class = "banner1">
+                    <div class = "picture1">
+                        <p> <i class="fas fa-language"></i> </p>
+                    </div>
+                    <div class = "banner-box1">
+                        <a href = "#"> Filipino 3 </a>
+                    </div>
+                </div>
+    
+                <div class = "banner2">
+                    <div class = "picture2">
+                        <p> <i class="fas fa-heartbeat"></i> </p>
+                    </div>
+                    <div class = "banner-box2">
+                        <a href = "#"> Health 3 - Pinatubo </a>
+                    </div>
+                </div> 
+            
+            </div>
+
+            <div class = "banner-container1">
+                <div class = "banner1">
+                    <div class = "picture1">
+                        <p> <i class="fas fa-user-friends"></i> </p>
+                    </div>
+                    <div class = "banner-box1">
+                        <a href = "#"> HR 9 - Pinatubo </a>
+                    </div>
+                </div>
+    
+                <div class = "banner2">
+                    <div class = "picture2">
+                        <p> <i class="fas fa-square-root-alt"></i> </p>
+                    </div>
+                    <div class = "banner-box2">
+                        <a href = "#"> Mathematics 3 - Pinatubo </a>
+                    </div>
+                </div> 
+            
+            </div>
+
+            <div class = "banner-container1">
+                <div class = "banner1">
+                    <div class = "picture1">
+                        <p> <i class="fas fa-music"></i> </p>
+                    </div>
+                    <div class = "banner-box1">
+                        <a href = "#"> Music 3 </a>
+                    </div>
+                </div>
+    
+                <div class = "banner2">
+                    <div class = "picture2">
+                        <p> <i class="fas fa-dumbbell"></i> </p>
+                    </div>
+                    <div class = "banner-box2">
+                        <a href = "#"> Physical Education 3 - Pinatubo </a>
+                    </div>
+                </div> 
+            
+            </div>
+
+            <div class = "banner-container1">
+                <div class = "banner1">
+                    <div class = "picture1">
+                        <p> <i class="far fa-paper-plane"></i> </p>
+                    </div>
+                    <div class = "banner-box1">
+                        <a href = "#"> Physics 1 - Pinatubo </a>
+                    </div>
+                </div>
+    
+                <div class = "banner2">
+                    <div class = "picture2">
+                        <p> <i class="fas fa-globe-americas"></i> </p>
+                    </div>
+                    <div class = "banner-box2">
+                        <a href = "#"> Social Science 3 - Pinatubo </a>
+                    </div>
+                </div> 
+            
+            </div>
+
+            <div class = "banner-container1">
+                <div class = "banner1">
+                    <div class = "picture1">
+                        <p> <i class="fas fa-chart-bar"></i> </p>
+                    </div>
+                    <div class = "banner-box1">
+                        <a href = "#"> Statistics 1 - Pinatubo </a>
+                    </div>
+                </div>
+    
+                <div class = "banner2">
+                    <div class = "picture2">
+                        <p> <i class="fas fa-hand-holding-heart"></i> </p>
+                    </div>
+                    <div class = "banner-box2">
+                        <a href = "#"> Values Education 3 - Pinatubo </a>
+                    </div>
+                </div> 
+            
+            </div>
+            
+             
+
+        </div>
+
+        <!-- This seperates the "no position" attribute section and the "position:fixed" attribute section-->
+        <!-- No need to edit other parts of the code (as well as css that make it) below this text (unless needed)-->
+        
+        <div class= "main-footer">
+            <p> Copyright &copy; 2022 9-Pinatubo Group 4 All rights reserved </p>
+        </div>
+
+        <div class = "main-header">
+            <div class= "logo">
+                <a href= "#"></a>
+            </div>
+            <h1> Re-Visioned K-Hub </h1>
+			
+			
+        </div>
+
+        <div class = "navbar-container">
+            <div class = "side-navbar">
+                <div class = "nav-dashboard">
+                    <div class = "title">
+                        <p> Dashboard </p>
+                    </div>
+                    <div class = "symbol-box"> 
+                        <div class = "circle-box">
+                            <a href="#"> &#127979; </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "nav-courses">
+                    <div class = "title">
+                        <p> My Profile </p>
+                    </div>
+                    <div class = "symbol-box"> 
+                        <div class = "circle-box">
+                            <a href="#"> &#128102; </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "nav-author">
+                    <div class = "title">
+                        <p> Authors </p>
+                    </div>
+                    <div class = "symbol-box"> 
+                        <div class = "circle-box">
+                            <a href="#"> &#128196; </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d734cd38d2f73b7',m:'I3tzTzv.HuRYFVKsIHba7ILlfV3lyWHbXWDDztM0mU8-1643803656-0-AZWVPWByLC0rM7GfGhgzXlSaluXGIPFPWi2+thAsXmHTwmu5F364p0lpBq8RLwIF1mSje8LuIXrKNxdISUYGZZ1psRkSinRZDg9eqbvYPsiPl+mKYzyiiLj7WnYJjPvovr4qZ/KUuEU29vPqaIkVyY3/Rd2+t/dG77DRAbWks3owKcD52Ccf4ue0/QN9A5ysGsJMxnTnts7mkZsB8Kcp+R0fDo/NUDZLRRp0hZphh+dA',s:[0xb840ed32f0,0x420429120c],}})();</script></body>
+</html>

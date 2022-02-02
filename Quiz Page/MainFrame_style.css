@@ -1,0 +1,265 @@
+body {
+    background-color: #e5f1fd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-header {
+    color: white;
+    background-color: navy;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+}
+
+.side-navbar {
+    color: white;
+    background-color: rgb(79, 79, 243);
+    position: fixed;
+    width: 200px;
+    height: 90%;
+    top: 90px;
+    left: 0;
+    padding-bottom: 100px;
+}
+
+.nav-dashboard, .nav-courses, .nav-author {
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    top: 50px;
+}
+
+.title {
+    background-color: rgb(49, 49, 243);
+    height: auto; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.symbol-box {
+    background-color: skyblue;
+    height: 100px;
+}
+
+.circle-box {
+    background-color: white;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.main-container{
+	position: relative;
+}
+
+.question-container-1 {
+	top: 25px;
+	left: 50px;
+	right: 50px;
+	background-color: #e9edf0;
+	position: absolute;
+	width: 90%;
+	height: 25%;
+	font-size: 25px;
+}
+.question-container-2 {
+	top: calc(50px + 25%);
+	left: 50px;
+	right: 50px;
+	background-color: #e9edf0;
+	position: absolute;
+	width: 90%;
+	height: 25%;
+	font-size: 25px;
+}
+.question-container-3 {
+	top: calc(75px + 50%);
+	left: 50px;
+	right: 50px;
+	background-color: #e9edf0;
+	position: absolute;
+	width: 90%;
+	height: 25%;
+	font-size: 25px;
+}
+.main-container p {
+	margin-left: 20px;
+}
+
+.choice {
+	margin-left: 20px;
+}
+
+@media (max-width: 450px) {
+
+    .main-header {
+        text-align: center;
+		height: 100px;
+    }
+	
+	.main-header h1 {
+		margin-left: 20px;
+	}
+    .navbar-container {
+        display: none;
+    }
+    
+    .page-name, .main-container, .mobile-nav, .main-footer {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+    .page-name {
+        margin-top: 120px;
+    }
+	
+	.mobile-nav {
+		background-color: navy;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin-bottom: 5px;
+	}
+	
+	.mobile-nav ul {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.mobile-nav ul li {
+		display: inline;
+		margin: 0;
+		padding: 0;
+		border-left: 1px solid white;
+	}
+	
+	.mobile-nav ul li a{
+		color: white;
+		padding: 2px 15px;
+	}
+	
+	
+	.question-container-1 {
+	top: 25px;
+	left: 10px;
+	right: 50px;
+	background-color: #e9edf0;
+	position: absolute;
+	width: 90%;
+	height: 25%;
+	font-size: 20px;
+}
+	.question-container-2 {
+	top: calc(50px + 25%);
+	left: 10px;
+	right: 50px;
+	background-color: #e9edf0;
+	position: absolute;
+	width: 90%;
+	height: 25%;
+	font-size: 20px;
+}
+	.question-container-3 {
+	top: calc(75px + 50%);
+	left: 10px;
+	right: 50px;
+	background-color: #e9edf0;
+	position: absolute;
+	width: 90%;
+	height: 25%;
+	font-size: 20px;
+}
+
+}
+
+@media (min-width: 451px) {
+    
+    .main-header h1 {
+        position: relative;
+        left: 50px;
+    }
+
+    .logo {
+        background-image: url("https://i.postimg.cc/Jn9yfLh4/K-Hub-Design-removebg-preview-1.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        left: 40px;
+    }
+
+    .page-name {
+        margin-top: 120px;
+        margin-left: 220px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    .main-container {
+        margin-left: 220px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .main-footer {
+        margin-left: 220px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+    }
+}
+
+.page-name {
+    background-color: white;
+    display: flex;
+    width: auto;
+    height: auto;   
+}
+
+.page-name h1 {
+    position: relative;
+    left: 10px;
+}
+
+.main-container {
+    background-color: white;
+    display: flex;
+    width: auto;
+    height: 1000px;
+    
+}
+
+.main-footer {
+    background-color: white;
+    display: flex;
+    width: auto;
+    height: auto;    
+}
+
+.main-footer p {
+    position: relative;
+    left: 10px;
+}
+

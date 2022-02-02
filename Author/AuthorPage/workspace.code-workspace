@@ -1,0 +1,15 @@
+{
+	"folders": [],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+		
+			{
+				"type": "pwa-msedge",
+				"request": "launch",
+				"name": "Open Authors.html",
+				"file": "c:\\Users\\Asus\\Documents\\HTML\\CS2-QTR-PROJ\\Authors.html"
+			}
+		]
+	}
+}
